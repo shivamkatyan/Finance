@@ -30,8 +30,19 @@ Visual tools for popular technical indicators like Bollinger Bands, RSI, and MAC
 To get started, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/shashankvemuri/Finance.git
+git clone https://github.com/shivamkatyan/Finance.git
 cd Finance
+
+# deactive any active venv
+deactivate
+# Delete any existing virtual environment
+rm -rf venv
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate
+# On Windows use: venv\Scripts\activate
+# Install requirements
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -49,6 +60,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## Authors
 - [@shashankvemuri](https://www.github.com/shashankvemuri)
+- [@shivamkatyan](https://www.github.com/shivamkatyan)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
